@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+
 
 export default function Film(props) {
   const { KaydedilenlerListesineEkle } = props;
-  const history = useHistory();
+ 
   const [movie, setMovie] = useState();
 
   let {id} = useParams();
